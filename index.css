@@ -25,6 +25,7 @@ body {
 body {
   font-family: var(--fnt-body);
   line-height: 1.41;
+  font-size: 1.125rem;
 }
 
 h1,
@@ -33,22 +34,78 @@ h3 {
   font-family: var(--fnt-display);
 }
 
+h1 {
+  font-size: 2.77rem;
+}
+
 img {
   display: block;
   max-width: 100%;
 }
 
 header {
+  position: fixed;
   display: flex;
+  background: transparent;
   justify-content: space-between;
+  padding: 0;
+  width: 80vw;
+  /* margin-right: -3rem; */
+}
+
+header p {
+  padding: 0;
+}
+
+main,
+section {
+  padding-block: var(--spacer-2x);
 }
 
 nav {
   display: none;
+  font-family: var(--fnt-display);
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 button {
   cursor: pointer;
+}
+
+fieldset {
+  font-family: var(--fnt-display);
+  border: none;
+}
+
+label {
+  display: block;
+}
+
+.logo {
+  background: black;
+  color: white;
+  font-family: var(--fnt-display);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.25em;
+  margin: 0;
+  /* margin-left: -3rem; */
+}
+
+.logo span {
+  color: var(--clr-logo-purple);
 }
 
 .mobile-menu {
@@ -66,6 +123,7 @@ button {
   padding: 1em;
   transform: translateX(calc(100vw + 100%));
   transition: transform 400ms ease-in-out;
+  z-index: 9999;
 }
 
 .mobile-menu button {
@@ -89,6 +147,10 @@ button {
   text-decoration: none;
 }
 
+fieldset {
+  padding-left: 0;
+}
+
 .mobile-menu.open {
   transform: translateX(0);
 }
@@ -105,4 +167,57 @@ cite {
 cite::before {
   content: '\2014';
   padding-right: 0.2em;
+}
+
+.image-grid--row {
+  display: flex;
+}
+
+.image-grid--row > * {
+  height: 117px;
+  width: 117px;
+}
+
+.intro-section-wrapper {
+  background: var(--clr-logo-purple);
+  width: 100%;
+  padding-right: 4rem;
+}
+
+.intro-section {
+  background: url('./assets/streaks.jpg') var(--clr-green);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  text-align: center;
+}
+
+.drone-img-container {
+  background: url('./assets/blur.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.quote-section {
+  background: url('./assets/stadium.jpg') #303853;
+  background-size: cover;
+  background-blend-mode: screen;
+  color: white;
+  font-family: var(--fnt-display);
+  margin-right: -4rem;
+  padding-block: var(--spacer-5x);
+}
+
+.register-section {
+  background: var(--clr-green);
+  margin-bottom: 0;
+}
+
+@media (min-width: 500px) {
+  nav {
+    display: block;
+  }
+  .open-mobile-menu {
+    display: none;
+  }
 }

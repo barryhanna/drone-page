@@ -23,7 +23,7 @@
         </ul>
     </div>
     <header>
-        <p class="logo">Drone.Series</p>
+        <p class="logo"><span>Drone</span>.Series</p>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -37,17 +37,22 @@
     </header>
     </nav>
     <main>
-        <section>
-            <div class="left-col">
-                <h1>Drone Racing Gone Wild</h1>
-                <p>Register now for the ultimate drone racing event. 5 mile courses and over $10 million in prize money!
-                </p>
-            </div>
-            <div class="right-col">
-                <img class="drone-img" src="./assets/drone.png" alt="Drone">
-            </div>
-        </section>
-        <section>
+        <div class="intro-section-wrapper">
+            <section class="intro-section">
+                <div class="left-col">
+                    <h1>Drone Racing Gone Wild</h1>
+                    <p>Register now for the ultimate drone racing event. 5 mile courses and over $10 million in prize
+                        money!
+                    </p>
+                </div>
+                <div class="right-col">
+                    <div class="drone-img-container">
+                        <img class="drone-img" src="./assets/drone.png" alt="Drone">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="quote-section">
             <blockquote>
                 “the stadium is simply unreal. scrimba hall will make this the best drone racing event ever, period.”
                 <cite>Anonymous Guy</cite>
@@ -61,10 +66,26 @@
                 <p>in 2021, we’re about to double the excitement with 10,000 race participants and 100,000 fans!</p>
             </div>
             <div class="right-col">
-                <img src="./assets/footage-1.jpg" alt="">
+                <div class="image-grid">
+                    <div class="image-grid--row">
+                        <div class="image-grid--image">&nbsp;</div>
+                        <img class="image-grid--image" src="./assets/footage-4.jpg" alt="">
+                        <img class="image-grid--image" src="./assets/footage-2.jpg" alt="">
+                    </div>
+                    <div class="image-grid--row">
+                        <img class="image-grid--image" src="./assets/footage-5.jpg" alt="">
+                        <img class="image-grid--image" src="./assets/footage-3.jpg" alt="">
+                        <div class="image-grid--image">&nbsp;</div>
+                    </div>
+                    <div class="image-grid--row">
+                        <div class="image-grid--image">&nbsp;</div>
+                        <img class="image-grid--image" src="./assets/footage-1.jpg" alt="">
+                        <div class="image-grid--image">&nbsp;</div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="register-section">
             <div class="left-col">
                 <h2>Register For The Event!</h2>
                 <form action="#">
