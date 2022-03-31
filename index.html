@@ -1,10 +1,93 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        
-        
-        <script src="index.js"></script>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Drone.Series</title>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        <button class="close-mobile-menu"><img src="./assets/exit.svg"></button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Races</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <p class="logo">Drone.Series</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Races</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="open-mobile-menu"><img src="./assets/menu.svg"></button>
+    </header>
+    </nav>
+    <main>
+        <section>
+            <div class="left-col">
+                <h1>Drone Racing Gone Wild</h1>
+                <p>Register now for the ultimate drone racing event. 5 mile courses and over $10 million in prize money!
+                </p>
+            </div>
+            <div class="right-col">
+                <img class="drone-img" src="./assets/drone.png" alt="Drone">
+            </div>
+        </section>
+        <section>
+            <blockquote>
+                “the stadium is simply unreal. scrimba hall will make this the best drone racing event ever, period.”
+                <cite>Anonymous Guy</cite>
+            </blockquote>
+        </section>
+        <section>
+            <div class="left-col">
+                <h2>Last Year's Footage</h2>
+                <p>With over 5,000 participants, 2020 featured some of the most amazing drone races from the most
+                    competitive field ever seen.</p>
+                <p>in 2021, we’re about to double the excitement with 10,000 race participants and 100,000 fans!</p>
+            </div>
+            <div class="right-col">
+                <img src="./assets/footage-1.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="left-col">
+                <h2>Register For The Event!</h2>
+                <form action="#">
+                    <fieldset>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </fieldset>
+                    <button type="submit">Register Now!</button>
+                </form>
+            </div>
+            <div class="right-col">
+                <div class="contact-details">
+                    <p><a href="tel:+4415555553298">1-555-555-3298</a></p>
+                    <p><a href="mailto:some@email.com">some@email.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
 </html>
